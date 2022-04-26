@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('FKsAfI1WYAQbmOA.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.header{
+  color: rgba(255, 255, 255, 0.637);
+font-family: 'Righteous', cursive;
+  font-size: 3em;
+}
+
+.mainWrapper{
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30em;
+  height: 80vh;
+  background-image: url('IMG_3294.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+}
+
+.quoteWrapper{
+  width: 20em;
+  z-index: 10;
+  line-height: 3em;
+  /* background-color: orange; */
+}
+
+.quoteMessage{
+  /* background-color: yellow; */
+  color: rgba(255, 255, 255, 0.937);
+  font-size: 2em;
+font-family: 'Courgette', cursive;
+/* font-family: serif; */
+}
+
+.nextAnimation{
+  animation: nextAnime 1.5s forwards;
+}
+
+@keyframes nextAnime{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.quoteAuthor{
+  color: rgba(255, 255, 255, .737);
+  text-align: right;
+  font-size: 1.2em;
+  /* font-family: sans-serif; */
+font-family: 'Sofia', cursive;
+}
+
+.prevBtnWrapper{
+  /* background-color: red; */
+  width: 2em;
+  height: 2em;
+  font-size: 1.7em;
+  padding: 0.5em;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 0 2em 2em 0;
+  transition: background-color 1s ease;
+  background-color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+.nextBtnWrapper{
+  /* background-color: red; */
+  width: 2em;
+  height: 2em;
+  font-size: 1.7em;
+  padding: 0.5em;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: background-color 1s ease;
+  border-radius: 2em 0 0 2em;
+  background-color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+
+.prevBtnWrapper:hover,
+.nextBtnWrapper:hover{
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.137);
+  position: relative;
+  width: 30em;
+  height: 80vh;
+  position: fixed;
+  pointer-events: none;
+  border-radius: 2em;
+}
+
+.hide{
+  /* display: none; */
+  visibility: hidden;
+}
